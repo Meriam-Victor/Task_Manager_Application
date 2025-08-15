@@ -30,7 +30,6 @@ Task_Manager_Application/
 │   │   ├── models/          # TypeORM entity models
 │   │   ├── routes/          # API route definitions
 │   │   ├── utils/           # Utility functions & validation
-│   │   └── __tests__/       # Unit tests
 │   └── package.json
 ├── postman/                  # API testing collection
 └── README.md
@@ -74,8 +73,8 @@ Before running this application, ensure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Meriam-Victor/task-manager-application.git
-cd task-manager-application
+git clone https://github.com/Meriam-Victor/Task-Manager-Application.git
+cd Task_Manager_Application
 ```
 
 ### 2. Backend Setup
@@ -301,8 +300,8 @@ For detailed instructions, see [`/postman/README.md`](postman/README.md).
 - 🧪 **Run unit tests** to understand functionality (`npm test`)
 
 ### Project Maintainer
-- **Email**: support@taskmanager.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Email**: meriamvictor.mourad@gmail.com
+- **GitHub**: [@Meriam-Victor](https://github.com/Meriam-Victor)
 
 
 ---

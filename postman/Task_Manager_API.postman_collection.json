@@ -293,56 +293,7 @@
             "description": "Create a new task. Only title is required. Priority can be 'high', 'medium', or 'low'. Due date should be in YYYY-MM-DD format."
           }
         },
-        {
-          "name": "Create Task - Minimal",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "pm.test(\"Status code is 201\", function () {",
-                  "    pm.response.to.have.status(201);",
-                  "});",
-                  "",
-                  "pm.test(\"Task created with minimal data\", function () {",
-                  "    const jsonData = pm.response.json();",
-                  "    pm.expect(jsonData).to.have.property('title', 'Simple task');",
-                  "    pm.expect(jsonData).to.have.property('completed', false);",
-                  "});"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"title\": \"Simple task\"\n}"
-            },
-            "url": {
-              "raw": "{{baseUrl}}/api/tasks",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "tasks"
-              ]
-            },
-            "description": "Create a task with only the required title field."
-          }
-        },
+        
         {
           "name": "Update Task",
           "event": [

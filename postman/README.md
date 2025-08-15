@@ -53,7 +53,6 @@ The collection automatically handles authentication:
 ### Tasks
 - Get All Tasks
 - Create Task
-- Create Task (Minimal)
 - Update Task
 - Delete Task
 
